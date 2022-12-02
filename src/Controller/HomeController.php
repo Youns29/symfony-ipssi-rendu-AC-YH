@@ -9,10 +9,9 @@ use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use app\Controller\ArticleController;
-use app\form\ArticleType;
-use App\Entity\category;
 use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
+use App\Entity\Category;
+
 
 #[Route('/')]
 class HomeController extends AbstractController
