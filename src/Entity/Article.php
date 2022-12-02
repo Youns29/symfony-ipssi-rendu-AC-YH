@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\ArticleRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: ArticleRepository::class)]
@@ -21,6 +23,14 @@ class Article
 
     #[ORM\Column]
     private ?\DateTimeImmutable $created_at = null;
+
+    #[ORM\ManyToOne(inversedBy: 'articles')]
+    private ?user $author = null;
+
+    public function __construct()
+    {
+        $this->articles = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -61,5 +71,18 @@ class Article
         $this->created_at = $created_at;
 
         return $this;
+    }
+
+    public function getAuthor(): ?self
+    {
+        return $this->author;
+    }
+
+    public function setAuthor(?self $author): self
+    {
+        $this->author = $author;
+
+        return $this;
+
     }
 }
