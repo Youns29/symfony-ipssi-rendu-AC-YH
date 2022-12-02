@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\ArticleRepository;
+use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: ArticleRepository::class)]
@@ -21,6 +22,13 @@ class Article
 
     #[ORM\Column]
     private ?\DateTimeImmutable $created_at = null;
+
+
+    #[ORM\ManyToOne(inversedBy: 'articles')]
+    private ?User $author = null;
+
+    #[ORM\Column(type: Types::TEXT)]
+    private ?string $content = null;
 
     public function getId(): ?int
     {
@@ -62,4 +70,29 @@ class Article
 
         return $this;
     }
+
+    public function getAuthor(): ?User
+    {
+        return $this->author;
+    }
+
+    public function setAuthor(?User $author): self
+    {
+        $this->author = $author;
+
+        return $this;
+    }
+
+    public function getContent(): ?string
+    {
+        return $this->content;
+    }
+
+    public function setContent(string $content): self
+    {
+        $this->content = $content;
+
+        return $this;
+    }
+
 }
