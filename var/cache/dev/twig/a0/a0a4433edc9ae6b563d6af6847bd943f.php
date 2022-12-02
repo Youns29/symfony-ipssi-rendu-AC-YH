@@ -81,6 +81,6 @@ class __TwigTemplate_5c6be59c85ad3b62b94e089e5015c257 extends Template
  */
 #}
 {% extends '@KnpPaginator/Pagination/twitter_bootstrap_v4_pagination.html.twig' %}
-", "@KnpPaginator/Pagination/bootstrap_v5_pagination.html.twig", "/Applications/MAMP/htdocs/dossier sans titre/symfony-ipssi-rendu-AC-YH/symfony-ipssi-rendu-base/vendor/knplabs/knp-paginator-bundle/templates/Pagination/bootstrap_v5_pagination.html.twig");
+", "@KnpPaginator/Pagination/bootstrap_v5_pagination.html.twig", "/Applications/MAMP/htdocs/sneaker-symfony-project/symfony-ipssi-rendu-AC-YH/vendor/knplabs/knp-paginator-bundle/templates/Pagination/bootstrap_v5_pagination.html.twig");
     }
 }

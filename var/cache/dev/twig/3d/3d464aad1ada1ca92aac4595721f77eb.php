@@ -71,6 +71,6 @@ class __TwigTemplate_0885bf5474ed8bdeae6a3169ec2527fc extends Template
     public function getSourceContext()
     {
         return new Source("{% extends \"@email/zurb_2/notification/body.txt.twig\" %}
-", "@email/default/notification/body.txt.twig", "/Applications/MAMP/htdocs/dossier sans titre/symfony-ipssi-rendu-AC-YH/symfony-ipssi-rendu-base/vendor/symfony/twig-bridge/Resources/views/Email/default/notification/body.txt.twig");
+", "@email/default/notification/body.txt.twig", "/Applications/MAMP/htdocs/sneaker-symfony-project/symfony-ipssi-rendu-AC-YH/vendor/symfony/twig-bridge/Resources/views/Email/default/notification/body.txt.twig");
     }
 }

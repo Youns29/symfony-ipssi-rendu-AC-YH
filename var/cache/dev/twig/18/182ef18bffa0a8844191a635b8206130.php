@@ -1543,6 +1543,6 @@ $context["voter_detail"], "vote", [], "array", false, false, false, 423) == twig
         </div>
     {% endif %}
 {% endblock %}
-", "@Security/Collector/security.html.twig", "/Applications/MAMP/htdocs/dossier sans titre/symfony-ipssi-rendu-AC-YH/symfony-ipssi-rendu-base/vendor/symfony/security-bundle/Resources/views/Collector/security.html.twig");
+", "@Security/Collector/security.html.twig", "/Applications/MAMP/htdocs/sneaker-symfony-project/symfony-ipssi-rendu-AC-YH/vendor/symfony/security-bundle/Resources/views/Collector/security.html.twig");
     }
 }

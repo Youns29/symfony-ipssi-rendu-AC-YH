@@ -102,6 +102,6 @@ class __TwigTemplate_71f05866551e06483557105a46b19bed extends Template
     {% if link|default(false) %}</a>{% endif %}
         <div class=\"sf-toolbar-info\">{{ text|default('') }}</div>
 </div>
-", "@WebProfiler/Profiler/toolbar_item.html.twig", "/Applications/MAMP/htdocs/dossier sans titre/symfony-ipssi-rendu-AC-YH/symfony-ipssi-rendu-base/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/toolbar_item.html.twig");
+", "@WebProfiler/Profiler/toolbar_item.html.twig", "/Applications/MAMP/htdocs/sneaker-symfony-project/symfony-ipssi-rendu-AC-YH/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/toolbar_item.html.twig");
     }
 }

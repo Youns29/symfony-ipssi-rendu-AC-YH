@@ -201,6 +201,6 @@ class __TwigTemplate_9c93fb0b4299ee1399a4d8c1e8328a46 extends Template
         </div>
     </div>
 {% endif %}
-", "@KnpPaginator/Pagination/tailwindcss_pagination.html.twig", "/Applications/MAMP/htdocs/dossier sans titre/symfony-ipssi-rendu-AC-YH/symfony-ipssi-rendu-base/vendor/knplabs/knp-paginator-bundle/templates/Pagination/tailwindcss_pagination.html.twig");
+", "@KnpPaginator/Pagination/tailwindcss_pagination.html.twig", "/Applications/MAMP/htdocs/sneaker-symfony-project/symfony-ipssi-rendu-AC-YH/vendor/knplabs/knp-paginator-bundle/templates/Pagination/tailwindcss_pagination.html.twig");
     }
 }

@@ -1214,6 +1214,6 @@ div.sf-toolbar  .sf-toolbar-block .sf-toolbar-info-piece.sf-toolbar-info-php-ext
         display: none !important;
     }
 }
-", "@WebProfiler/Profiler/toolbar.css.twig", "/Applications/MAMP/htdocs/dossier sans titre/symfony-ipssi-rendu-AC-YH/symfony-ipssi-rendu-base/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/toolbar.css.twig");
+", "@WebProfiler/Profiler/toolbar.css.twig", "/Applications/MAMP/htdocs/sneaker-symfony-project/symfony-ipssi-rendu-AC-YH/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/toolbar.css.twig");
     }
 }

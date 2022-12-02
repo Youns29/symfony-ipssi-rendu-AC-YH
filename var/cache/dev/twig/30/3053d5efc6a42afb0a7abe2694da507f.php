@@ -1190,6 +1190,6 @@ class __TwigTemplate_e48d2dc2ab9d5baf1f9848891073c677 extends Template
 {% macro render_time_cell(item) %}
     <span class=\"nowrap\">{{ '%.2f'|format(item.time * 1000) }} ms</span>
 {% endmacro %}
-", "@WebProfiler/Collector/serializer.html.twig", "/Applications/MAMP/htdocs/dossier sans titre/symfony-ipssi-rendu-AC-YH/symfony-ipssi-rendu-base/vendor/symfony/web-profiler-bundle/Resources/views/Collector/serializer.html.twig");
+", "@WebProfiler/Collector/serializer.html.twig", "/Applications/MAMP/htdocs/sneaker-symfony-project/symfony-ipssi-rendu-AC-YH/vendor/symfony/web-profiler-bundle/Resources/views/Collector/serializer.html.twig");
     }
 }

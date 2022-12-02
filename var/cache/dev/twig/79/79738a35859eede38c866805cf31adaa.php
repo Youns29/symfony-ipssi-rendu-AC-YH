@@ -326,6 +326,6 @@ class __TwigTemplate_2557047a44852bdb78cebecd859ae67f extends Template
         </ul>
     </nav>
 {% endif %}
-", "@KnpPaginator/Pagination/bulma_pagination.html.twig", "/Applications/MAMP/htdocs/dossier sans titre/symfony-ipssi-rendu-AC-YH/symfony-ipssi-rendu-base/vendor/knplabs/knp-paginator-bundle/templates/Pagination/bulma_pagination.html.twig");
+", "@KnpPaginator/Pagination/bulma_pagination.html.twig", "/Applications/MAMP/htdocs/sneaker-symfony-project/symfony-ipssi-rendu-AC-YH/vendor/knplabs/knp-paginator-bundle/templates/Pagination/bulma_pagination.html.twig");
     }
 }

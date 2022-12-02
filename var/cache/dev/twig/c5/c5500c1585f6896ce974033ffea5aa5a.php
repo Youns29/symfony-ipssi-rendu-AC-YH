@@ -97,6 +97,6 @@ class __TwigTemplate_f145480f2b34bf3e870766112c2fdfec extends Template
         </div>
     </div>
 </div>
-", "@WebProfiler/Profiler/header.html.twig", "/Applications/MAMP/htdocs/dossier sans titre/symfony-ipssi-rendu-AC-YH/symfony-ipssi-rendu-base/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/header.html.twig");
+", "@WebProfiler/Profiler/header.html.twig", "/Applications/MAMP/htdocs/sneaker-symfony-project/symfony-ipssi-rendu-AC-YH/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/header.html.twig");
     }
 }

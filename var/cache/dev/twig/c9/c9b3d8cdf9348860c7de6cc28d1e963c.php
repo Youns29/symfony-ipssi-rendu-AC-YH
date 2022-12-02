@@ -155,6 +155,6 @@ class __TwigTemplate_f34851819f4e27e377accdb89a3c7c94 extends Template
 {% block panel %}
     {{ render(controller('web_profiler.controller.router::panelAction', { token: token })) }}
 {% endblock %}
-", "@WebProfiler/Collector/router.html.twig", "/Applications/MAMP/htdocs/dossier sans titre/symfony-ipssi-rendu-AC-YH/symfony-ipssi-rendu-base/vendor/symfony/web-profiler-bundle/Resources/views/Collector/router.html.twig");
+", "@WebProfiler/Collector/router.html.twig", "/Applications/MAMP/htdocs/sneaker-symfony-project/symfony-ipssi-rendu-AC-YH/vendor/symfony/web-profiler-bundle/Resources/views/Collector/router.html.twig");
     }
 }

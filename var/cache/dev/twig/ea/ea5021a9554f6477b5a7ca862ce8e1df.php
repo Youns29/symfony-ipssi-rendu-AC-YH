@@ -330,6 +330,6 @@ class __TwigTemplate_ccf3a19ef9acce99d78c4a52f4591666 extends Template
     {% endif %}
 
 {% endblock %}
-", "@WebProfiler/Profiler/results.html.twig", "/Applications/MAMP/htdocs/dossier sans titre/symfony-ipssi-rendu-AC-YH/symfony-ipssi-rendu-base/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/results.html.twig");
+", "@WebProfiler/Profiler/results.html.twig", "/Applications/MAMP/htdocs/sneaker-symfony-project/symfony-ipssi-rendu-AC-YH/vendor/symfony/web-profiler-bundle/Resources/views/Profiler/results.html.twig");
     }
 }

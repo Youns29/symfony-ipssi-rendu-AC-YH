@@ -843,6 +843,6 @@ class __TwigTemplate_c39f117dda2f969c2b9990f5ed4a7680 extends Template
     </table>
     {% endfor %}
 {% endmacro %}
-", "@WebProfiler/Collector/messenger.html.twig", "/Applications/MAMP/htdocs/dossier sans titre/symfony-ipssi-rendu-AC-YH/symfony-ipssi-rendu-base/vendor/symfony/web-profiler-bundle/Resources/views/Collector/messenger.html.twig");
+", "@WebProfiler/Collector/messenger.html.twig", "/Applications/MAMP/htdocs/sneaker-symfony-project/symfony-ipssi-rendu-AC-YH/vendor/symfony/web-profiler-bundle/Resources/views/Collector/messenger.html.twig");
     }
 }
