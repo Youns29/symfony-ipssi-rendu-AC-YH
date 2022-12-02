@@ -252,6 +252,6 @@ class __TwigTemplate_6a8907f97e0dc99df7ed6b92aec190ee extends Template
         {% block body %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "/Applications/MAMP/htdocs/Sneakers-Symfony/symfony-ipssi-rendu-AC-YH/templates/base.html.twig");
+", "base.html.twig", "/Applications/MAMP/htdocs/sneaker-symfony-project/symfony-ipssi-rendu-AC-YH/templates/base.html.twig");
     }
 }
