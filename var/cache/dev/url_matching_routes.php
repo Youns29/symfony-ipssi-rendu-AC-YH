@@ -17,6 +17,7 @@ return [
         '/article' => [[['_route' => 'app_article_index', '_controller' => 'App\\Controller\\ArticleController::index'], null, ['GET' => 0], null, true, false, null]],
         '/article/new' => [[['_route' => 'app_article_new', '_controller' => 'App\\Controller\\ArticleController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
         '/' => [[['_route' => 'app_home', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null]],
+        '/create_user' => [[['_route' => 'app_create_user', '_controller' => 'App\\Controller\\HomeController::createUser'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'
