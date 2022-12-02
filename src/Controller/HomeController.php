@@ -9,6 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 #[Route('/')]
 class HomeController extends AbstractController
 {
+<<<<<<< HEAD
     #[Route('', name: 'app_home')]
     public function index(): Response
     {
@@ -19,6 +20,13 @@ class HomeController extends AbstractController
         return $this->render('home/index.html.twig', [
             'controller_name' => 'HomeController',
             'array' => $array,
+=======
+    #[Route('/', name: 'app_home')]
+    public function index(): Response
+    {
+        return $this->render('home/index.html.twig', [
+            'controller_name' => 'HomeController',
+>>>>>>> alex
         ]);
     }
 }
