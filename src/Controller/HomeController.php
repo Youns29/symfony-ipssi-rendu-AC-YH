@@ -35,21 +35,5 @@ class HomeController extends AbstractController
             'articles' => $articles,
         ]);
 }
-        #[Route('/create_user', name: 'app_create_user')]
-    public function createUser(UserRepository $userRepository): Response
-    {
-        $user = new User();
-        $user->setEmail('john@go.com');
-        $user->setLastname('Doe');
-        $user->setFirstname('John');
-        $user->setProfilepicture('https://picsum.photos/200');
-        $user->setRoles(['ROLE_USER']);
-        $plainPassword = "123456";
-        $password= $this->encoder->hashPassword($user, $plainPassword);
-        $user->setPassword($password);
-        $entityManager = $this->registery->getManager();
-        $entityManager->persist($user);
-        $entityManager->flush();
-        return $this->redirectToRoute('app_home');
-}
+
 }
