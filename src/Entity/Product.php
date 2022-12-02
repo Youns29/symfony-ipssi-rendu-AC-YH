@@ -32,6 +32,12 @@ class Product
     #[ORM\ManyToOne(inversedBy: 'products')]
     private ?category $category = null;
 
+    #[ORM\ManyToOne(inversedBy: 'products')]
+    private ?User $seller = null;
+
+    #[ORM\Column]
+    private ?int $quantity = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -105,6 +111,30 @@ class Product
     public function setCategory(?category $category): self
     {
         $this->category = $category;
+
+        return $this;
+    }
+
+    public function getSeller(): ?User
+    {
+        return $this->seller;
+    }
+
+    public function setSeller(?User $seller): self
+    {
+        $this->seller = $seller;
+
+        return $this;
+    }
+
+    public function getQuantity(): ?int
+    {
+        return $this->quantity;
+    }
+
+    public function setQuantity(int $quantity): self
+    {
+        $this->quantity = $quantity;
 
         return $this;
     }
