@@ -3,4 +3,8 @@
 .idea/
 .env.local
 /var/
+<<<<<<< HEAD
 /public/build/
+=======
+/public/build/
+>>>>>>> alex
