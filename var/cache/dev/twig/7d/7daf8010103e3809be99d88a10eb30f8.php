@@ -65,10 +65,48 @@ class __TwigTemplate_6a8907f97e0dc99df7ed6b92aec190ee extends Template
         // line 15
         echo "    </head>
     <body>
+    <header>
+        <nav>
+            <a href=\"";
+        // line 19
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_home");
+        echo "\">Home</a>
+            <a href=\"";
+        // line 20
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_article_index");
+        echo "\">Articles</a>
+
+            ";
+        // line 22
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 22, $this->source); })()), "user", [], "any", false, false, false, 22)) {
+            // line 23
+            echo "                <a href=\"";
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
+            echo "\">Déconnexion</a>
+            ";
+        } else {
+            // line 25
+            echo "                <a href=\"";
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
+            echo "\">Se Connecter</a>
+            ";
+        }
+        // line 27
+        echo "            ";
+        if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
+            // line 28
+            echo "                <a href=\"";
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_admin");
+            echo "\">Admin</a>
+            ";
+        }
+        // line 30
+        echo "        </nav>
+    </header>
         ";
-        // line 17
+        // line 32
         $this->displayBlock('body', $context, $blocks);
-        // line 18
+        // line 33
         echo "    </body>
 </html>
 ";
@@ -145,7 +183,7 @@ class __TwigTemplate_6a8907f97e0dc99df7ed6b92aec190ee extends Template
 
     }
 
-    // line 17
+    // line 32
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -168,9 +206,14 @@ class __TwigTemplate_6a8907f97e0dc99df7ed6b92aec190ee extends Template
         return "base.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  149 => 17,  136 => 13,  126 => 12,  113 => 9,  103 => 8,  84 => 5,  72 => 18,  70 => 17,  66 => 15,  64 => 12,  61 => 11,  58 => 8,  53 => 5,  47 => 1,);
+        return array (  187 => 32,  174 => 13,  164 => 12,  151 => 9,  141 => 8,  122 => 5,  110 => 33,  108 => 32,  104 => 30,  98 => 28,  95 => 27,  89 => 25,  83 => 23,  81 => 22,  76 => 20,  72 => 19,  66 => 15,  64 => 12,  61 => 11,  58 => 8,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -191,9 +234,24 @@ class __TwigTemplate_6a8907f97e0dc99df7ed6b92aec190ee extends Template
         {% endblock %}
     </head>
     <body>
+    <header>
+        <nav>
+            <a href=\"{{ path('app_home') }}\">Home</a>
+            <a href=\"{{ path('app_article_index') }}\">Articles</a>
+
+            {% if app.user %}
+                <a href=\"{{ path('app_logout') }}\">Déconnexion</a>
+            {% else %}
+                <a href=\"{{ path('app_login') }}\">Se Connecter</a>
+            {% endif %}
+            {% if is_granted(\"ROLE_ADMIN\") %}
+                <a href=\"{{ path('app_admin') }}\">Admin</a>
+            {% endif %}
+        </nav>
+    </header>
         {% block body %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "/Applications/MAMP/htdocs/sneaker-symfony-project/symfony-ipssi-rendu-AC-YH/templates/base.html.twig");
+", "base.html.twig", "/Applications/MAMP/htdocs/Sneakers-Symfony/symfony-ipssi-rendu-AC-YH/templates/base.html.twig");
     }
 }
