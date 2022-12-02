@@ -82,13 +82,13 @@ class __TwigTemplate_6a8907f97e0dc99df7ed6b92aec190ee extends Template
             // line 23
             echo "                <a href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
-            echo "\">Déconnexion</a>
+            echo "\">Logout</a>
             ";
         } else {
             // line 25
             echo "                <a href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
-            echo "\">Se Connecter</a>
+            echo "\">Login</a>
             ";
         }
         // line 27
@@ -240,9 +240,9 @@ class __TwigTemplate_6a8907f97e0dc99df7ed6b92aec190ee extends Template
             <a href=\"{{ path('app_article_index') }}\">Articles</a>
 
             {% if app.user %}
-                <a href=\"{{ path('app_logout') }}\">Déconnexion</a>
+                <a href=\"{{ path('app_logout') }}\">Logout</a>
             {% else %}
-                <a href=\"{{ path('app_login') }}\">Se Connecter</a>
+                <a href=\"{{ path('app_login') }}\">Login</a>
             {% endif %}
             {% if is_granted(\"ROLE_ADMIN\") %}
                 <a href=\"{{ path('app_admin') }}\">Admin</a>
@@ -252,6 +252,6 @@ class __TwigTemplate_6a8907f97e0dc99df7ed6b92aec190ee extends Template
         {% block body %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "/Applications/MAMP/htdocs/sneaker-symfony-project/symfony-ipssi-rendu-AC-YH/templates/base.html.twig");
+", "base.html.twig", "/Applications/MAMP/htdocs/Sneakers-Symfony/symfony-ipssi-rendu-AC-YH/templates/base.html.twig");
     }
 }
