@@ -2,6 +2,7 @@
 /node_modules/
 .idea/
 .env.local
+.env
 /var/
 <<<<<<< HEAD
 /public/build/
