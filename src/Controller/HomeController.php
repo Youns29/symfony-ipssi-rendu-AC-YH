@@ -8,6 +8,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use app\Controller\ArticleController;
+use app\form\ArticleType;
 
 #[Route('/')]
 class HomeController extends AbstractController
@@ -23,11 +24,9 @@ class HomeController extends AbstractController
             Article::class
         );
         $articles= $articleRepository->find(1);
-        $array = [
-          'hello' => 'world',
-            'hello2' => 'world2',
-        ];
-        dd($articles);
+
+        $articleTitle = $articles->getTitle();
+#        dd($articles);
         return $this->render('home/index.html.twig', [
             'articles' => $articles,
         ]);
