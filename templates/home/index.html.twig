@@ -9,7 +9,15 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <h1>Hello  ✅</h1>
+
+    <div>
+        {% for element in array  %}
+
+            <p>{{ element }}</p>
+
+        {% endfor %}
+    </div>
 
     This friendly message is coming from:
     <ul>
