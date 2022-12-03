@@ -23,12 +23,6 @@ class Product
     #[ORM\Column]
     private ?int $Price = null;
 
-    #[ORM\Column]
-    private ?\DateTimeImmutable $created_at = null;
-
-    #[ORM\Column(length: 255)]
-    private ?string $picture = null;
-
     #[ORM\ManyToOne(inversedBy: 'products')]
     private ?category $category = null;
 
@@ -75,30 +69,6 @@ class Product
     public function setPrice(int $Price): self
     {
         $this->Price = $Price;
-
-        return $this;
-    }
-
-    public function getCreatedAt(): ?\DateTimeImmutable
-    {
-        return $this->created_at;
-    }
-
-    public function setCreatedAt(\DateTimeImmutable $created_at): self
-    {
-        $this->created_at = $created_at;
-
-        return $this;
-    }
-
-    public function getPicture(): ?string
-    {
-        return $this->picture;
-    }
-
-    public function setPicture(string $picture): self
-    {
-        $this->picture = $picture;
 
         return $this;
     }

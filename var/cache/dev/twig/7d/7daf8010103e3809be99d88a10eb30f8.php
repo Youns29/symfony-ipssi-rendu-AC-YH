@@ -75,38 +75,42 @@ class __TwigTemplate_6a8907f97e0dc99df7ed6b92aec190ee extends Template
         // line 20
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_article_index");
         echo "\">Articles</a>
+            <a href=\"";
+        // line 21
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product_index");
+        echo "\">Product</a>
 
             ";
-        // line 22
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 22, $this->source); })()), "user", [], "any", false, false, false, 22)) {
-            // line 23
+        // line 23
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 23, $this->source); })()), "user", [], "any", false, false, false, 23)) {
+            // line 24
             echo "                <a href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
             echo "\">Logout</a>
             ";
         } else {
-            // line 25
+            // line 26
             echo "                <a href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
             echo "\">Login</a>
             ";
         }
-        // line 27
+        // line 28
         echo "            ";
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
-            // line 28
+            // line 29
             echo "                <a href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_admin");
             echo "\">Admin</a>
             ";
         }
-        // line 30
+        // line 31
         echo "        </nav>
     </header>
         ";
-        // line 32
-        $this->displayBlock('body', $context, $blocks);
         // line 33
+        $this->displayBlock('body', $context, $blocks);
+        // line 34
         echo "    </body>
 </html>
 ";
@@ -183,7 +187,7 @@ class __TwigTemplate_6a8907f97e0dc99df7ed6b92aec190ee extends Template
 
     }
 
-    // line 32
+    // line 33
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -213,7 +217,7 @@ class __TwigTemplate_6a8907f97e0dc99df7ed6b92aec190ee extends Template
 
     public function getDebugInfo()
     {
-        return array (  187 => 32,  174 => 13,  164 => 12,  151 => 9,  141 => 8,  122 => 5,  110 => 33,  108 => 32,  104 => 30,  98 => 28,  95 => 27,  89 => 25,  83 => 23,  81 => 22,  76 => 20,  72 => 19,  66 => 15,  64 => 12,  61 => 11,  58 => 8,  53 => 5,  47 => 1,);
+        return array (  191 => 33,  178 => 13,  168 => 12,  155 => 9,  145 => 8,  126 => 5,  114 => 34,  112 => 33,  108 => 31,  102 => 29,  99 => 28,  93 => 26,  87 => 24,  85 => 23,  80 => 21,  76 => 20,  72 => 19,  66 => 15,  64 => 12,  61 => 11,  58 => 8,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -238,6 +242,7 @@ class __TwigTemplate_6a8907f97e0dc99df7ed6b92aec190ee extends Template
         <nav>
             <a href=\"{{ path('app_home') }}\">Home</a>
             <a href=\"{{ path('app_article_index') }}\">Articles</a>
+            <a href=\"{{ path('app_product_index') }}\">Product</a>
 
             {% if app.user %}
                 <a href=\"{{ path('app_logout') }}\">Logout</a>

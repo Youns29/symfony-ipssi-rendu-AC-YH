@@ -16,11 +16,12 @@ use App\Entity\Category;
 #[Route('/')]
 class HomeController extends AbstractController
 {
-    public function __construct( protected ManagerRegistry $registery, protected UserPasswordHasherInterface $encoder)
+    public function __construct(
+        protected ManagerRegistry $registery,
+        protected UserPasswordHasherInterface $encoder
+    ){
 
-    {
     }
-
     #[Route('', name: 'app_home')]
     public function index(ManagerRegistry $registry): Response
     {

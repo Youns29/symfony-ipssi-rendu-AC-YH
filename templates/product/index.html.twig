@@ -12,8 +12,6 @@
                 <th>Title</th>
                 <th>Description</th>
                 <th>Price</th>
-                <th>Created_at</th>
-                <th>Picture</th>
                 <th>Quantity</th>
                 <th>actions</th>
             </tr>
@@ -25,8 +23,6 @@
                 <td>{{ product.title }}</td>
                 <td>{{ product.Description }}</td>
                 <td>{{ product.Price }}</td>
-                <td>{{ product.createdAt ? product.createdAt|date('Y-m-d H:i:s') : '' }}</td>
-                <td>{{ product.picture }}</td>
                 <td>{{ product.quantity }}</td>
                 <td>
                     <a href="{{ path('app_product_show', {'id': product.id}) }}">show</a>
