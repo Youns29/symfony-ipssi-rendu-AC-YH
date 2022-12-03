@@ -34,6 +34,7 @@ class HomeController extends AbstractController
 #        dd($articles);
         return $this->render('home/index.html.twig', [
             'articles' => $articles,
+            'articleTitle' => $articleTitle,
         ]);
 }
 

@@ -5,11 +5,11 @@ namespace App\Controller;
 use App\Entity\User;
 use App\Form\UserType;
 use Doctrine\ORM\EntityManagerInterface;
-use http\Client\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 
 class UserController extends AbstractController
 {
@@ -18,7 +18,7 @@ class UserController extends AbstractController
     }
 
     #[Route('/profile/{id}', name: 'app_user_show')]
-    public function getProfile(\Symfony\Component\HttpFoundation\Request $request, User $user, EntityManagerInterface $entityManager): Response
+    public function getProfile(Request $request, User $user, EntityManagerInterface $entityManager): Response
     {
         if ($user->getId() == $this->getUser()->getId()) {
             $profile = $user;
@@ -29,6 +29,7 @@ class UserController extends AbstractController
             $form->handleRequest($request);
 
             if ($form->isSubmitted() && $form->isValid()) {
+                // encode the plain password
                 $user->setPassword(
                     $this->userPasswordHasher->hashPassword(
                         $user,

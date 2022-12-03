@@ -46,74 +46,81 @@ class __TwigTemplate_6a8907f97e0dc99df7ed6b92aec190ee extends Template
         // line 1
         echo "<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset=\"UTF-8\">
-        <title>";
+<head>
+    <meta charset=\"UTF-8\">
+    <title>";
         // line 5
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
-        <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">
-        ";
+    <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">
+    ";
         // line 8
-        echo "        ";
+        echo "    ";
         $this->displayBlock('stylesheets', $context, $blocks);
         // line 11
         echo "
-        ";
+    ";
         // line 12
         $this->displayBlock('javascripts', $context, $blocks);
         // line 15
-        echo "    </head>
-    <body>
-    <header>
-        <nav>
-            <a href=\"";
+        echo "</head>
+<body>
+<header>
+    <nav>
+        <a href=\"";
         // line 19
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_home");
         echo "\">Home</a>
-            <a href=\"";
+        <a href=\"";
         // line 20
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_article_index");
         echo "\">Articles</a>
-            <a href=\"";
+        <a href=\"";
         // line 21
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product_index");
         echo "\">Product</a>
+        <a href=\"";
+        // line 22
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_category_index");
+        echo "\">Category</a>
 
-            ";
-        // line 23
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 23, $this->source); })()), "user", [], "any", false, false, false, 23)) {
-            // line 24
-            echo "                <a href=\"";
+        ";
+        // line 24
+        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 24, $this->source); })()), "user", [], "any", false, false, false, 24)) {
+            // line 25
+            echo "            <a href=\"";
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_user_show", ["id" => twig_get_attribute($this->env, $this->source, twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 25, $this->source); })()), "user", [], "any", false, false, false, 25), "id", [], "any", false, false, false, 25)]), "html", null, true);
+            echo "\">Profil</a>
+            <a href=\"";
+            // line 26
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
             echo "\">Logout</a>
-            ";
+        ";
         } else {
-            // line 26
-            echo "                <a href=\"";
+            // line 28
+            echo "            <a href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
             echo "\">Login</a>
-            ";
+        ";
         }
-        // line 28
-        echo "            ";
+        // line 30
+        echo "        ";
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
-            // line 29
-            echo "                <a href=\"";
+            // line 31
+            echo "            <a href=\"";
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_admin");
             echo "\">Admin</a>
-            ";
-        }
-        // line 31
-        echo "        </nav>
-    </header>
         ";
+        }
         // line 33
-        $this->displayBlock('body', $context, $blocks);
-        // line 34
-        echo "    </body>
-</html>
+        echo "    </nav>
+</header>
 ";
+        // line 35
+        $this->displayBlock('body', $context, $blocks);
+        // line 36
+        echo "</body>
+</html>";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
 
@@ -152,10 +159,10 @@ class __TwigTemplate_6a8907f97e0dc99df7ed6b92aec190ee extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
         // line 9
-        echo "            ";
+        echo "        ";
         echo $this->extensions['Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension']->renderWebpackLinkTags("app");
         echo "
-        ";
+    ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -175,10 +182,10 @@ class __TwigTemplate_6a8907f97e0dc99df7ed6b92aec190ee extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
         // line 13
-        echo "            ";
+        echo "        ";
         echo $this->extensions['Symfony\WebpackEncoreBundle\Twig\EntryFilesTwigExtension']->renderWebpackScriptTags("app");
         echo "
-        ";
+    ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -187,7 +194,7 @@ class __TwigTemplate_6a8907f97e0dc99df7ed6b92aec190ee extends Template
 
     }
 
-    // line 33
+    // line 35
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -217,46 +224,47 @@ class __TwigTemplate_6a8907f97e0dc99df7ed6b92aec190ee extends Template
 
     public function getDebugInfo()
     {
-        return array (  191 => 33,  178 => 13,  168 => 12,  155 => 9,  145 => 8,  126 => 5,  114 => 34,  112 => 33,  108 => 31,  102 => 29,  99 => 28,  93 => 26,  87 => 24,  85 => 23,  80 => 21,  76 => 20,  72 => 19,  66 => 15,  64 => 12,  61 => 11,  58 => 8,  53 => 5,  47 => 1,);
+        return array (  198 => 35,  185 => 13,  175 => 12,  162 => 9,  152 => 8,  133 => 5,  122 => 36,  120 => 35,  116 => 33,  110 => 31,  107 => 30,  101 => 28,  96 => 26,  91 => 25,  89 => 24,  84 => 22,  80 => 21,  76 => 20,  72 => 19,  66 => 15,  64 => 12,  61 => 11,  58 => 8,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset=\"UTF-8\">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">
-        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
-        {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
-        {% endblock %}
+<head>
+    <meta charset=\"UTF-8\">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">
+    {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
 
-        {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
-        {% endblock %}
-    </head>
-    <body>
-    <header>
-        <nav>
-            <a href=\"{{ path('app_home') }}\">Home</a>
-            <a href=\"{{ path('app_article_index') }}\">Articles</a>
-            <a href=\"{{ path('app_product_index') }}\">Product</a>
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+    {% endblock %}
+</head>
+<body>
+<header>
+    <nav>
+        <a href=\"{{ path('app_home') }}\">Home</a>
+        <a href=\"{{ path('app_article_index') }}\">Articles</a>
+        <a href=\"{{ path('app_product_index') }}\">Product</a>
+        <a href=\"{{ path('app_category_index') }}\">Category</a>
 
-            {% if app.user %}
-                <a href=\"{{ path('app_logout') }}\">Logout</a>
-            {% else %}
-                <a href=\"{{ path('app_login') }}\">Login</a>
-            {% endif %}
-            {% if is_granted(\"ROLE_ADMIN\") %}
-                <a href=\"{{ path('app_admin') }}\">Admin</a>
-            {% endif %}
-        </nav>
-    </header>
-        {% block body %}{% endblock %}
-    </body>
-</html>
-", "base.html.twig", "/Applications/MAMP/htdocs/Sneakers-Symfony/symfony-ipssi-rendu-AC-YH/templates/base.html.twig");
+        {% if app.user %}
+            <a href=\"{{ path('app_user_show', {'id': app.user.id}) }}\">Profil</a>
+            <a href=\"{{ path('app_logout') }}\">Logout</a>
+        {% else %}
+            <a href=\"{{ path('app_login') }}\">Login</a>
+        {% endif %}
+        {% if is_granted(\"ROLE_ADMIN\") %}
+            <a href=\"{{ path('app_admin') }}\">Admin</a>
+        {% endif %}
+    </nav>
+</header>
+{% block body %}{% endblock %}
+</body>
+</html>", "base.html.twig", "/Applications/MAMP/htdocs/Sneakers-Symfony/symfony-ipssi-rendu-AC-YH/templates/base.html.twig");
     }
 }
