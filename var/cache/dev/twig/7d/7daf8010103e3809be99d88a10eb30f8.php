@@ -66,47 +66,35 @@ class __TwigTemplate_6a8907f97e0dc99df7ed6b92aec190ee extends Template
         echo "    </head>
     <body>
     <header>
-        <nav>
-            <a href=\"";
-        // line 19
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_home");
-        echo "\">Home</a>
-            <a href=\"";
-        // line 20
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_article_index");
-        echo "\">Articles</a>
+        <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+            <div class=\"container px-4 px-lg-5\">
+                <h1 class=\"navbar-brand\" href=\"#!\">SNEAKERSS</h1>
+                ";
+        // line 21
+        echo "<span class=\"navbar-toggler-icon\"></span></button>
+                <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
+                    <ul class=\"navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4\">
+                        <li class=\"nav-item\"><a class=\"nav-link active\" aria-current=\"page\" href=\"#!\">Home</a></li>
+                        <li class=\"nav-item\"><a class=\"nav-link active\" aria-current=\"page\" href=\"#!\">Article</a></li>
+                        <li class=\"nav-item\"><a class=\"nav-link active\" aria-current=\"page\" href=\"#!\">Product</a></li>
+                        <li class=\"nav-item\"><a class=\"nav-link active\" aria-current=\"page\" href=\"#!\">Sign In</a></li>
 
-            ";
-        // line 22
-        if (twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 22, $this->source); })()), "user", [], "any", false, false, false, 22)) {
-            // line 23
-            echo "                <a href=\"";
-            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
-            echo "\">Logout</a>
-            ";
-        } else {
-            // line 25
-            echo "                <a href=\"";
-            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
-            echo "\">Login</a>
-            ";
-        }
-        // line 27
-        echo "            ";
-        if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
-            // line 28
-            echo "                <a href=\"";
-            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_admin");
-            echo "\">Admin</a>
-            ";
-        }
-        // line 30
-        echo "        </nav>
+                    </ul>
+                    <form class=\"d-flex\">
+                            <button class=\"btn btn-outline-dark\" type=\"submit\">
+                                <i class=\"bi-cart-fill me-1\"></i>
+                                Cart
+                                <span class=\"badge bg-dark text-white ms-1 rounded-pill\">0</span>
+                            </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
         ";
-        // line 32
+        // line 41
         $this->displayBlock('body', $context, $blocks);
-        // line 33
+        // line 42
         echo "    </body>
 </html>
 ";
@@ -183,7 +171,7 @@ class __TwigTemplate_6a8907f97e0dc99df7ed6b92aec190ee extends Template
 
     }
 
-    // line 32
+    // line 41
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -206,14 +194,9 @@ class __TwigTemplate_6a8907f97e0dc99df7ed6b92aec190ee extends Template
         return "base.html.twig";
     }
 
-    public function isTraitable()
-    {
-        return false;
-    }
-
     public function getDebugInfo()
     {
-        return array (  187 => 32,  174 => 13,  164 => 12,  151 => 9,  141 => 8,  122 => 5,  110 => 33,  108 => 32,  104 => 30,  98 => 28,  95 => 27,  89 => 25,  83 => 23,  81 => 22,  76 => 20,  72 => 19,  66 => 15,  64 => 12,  61 => 11,  58 => 8,  53 => 5,  47 => 1,);
+        return array (  175 => 41,  162 => 13,  152 => 12,  139 => 9,  129 => 8,  110 => 5,  98 => 42,  96 => 41,  74 => 21,  66 => 15,  64 => 12,  61 => 11,  58 => 8,  53 => 5,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -235,7 +218,33 @@ class __TwigTemplate_6a8907f97e0dc99df7ed6b92aec190ee extends Template
     </head>
     <body>
     <header>
-        <nav>
+        <nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+            <div class=\"container px-4 px-lg-5\">
+                <h1 class=\"navbar-brand\" href=\"#!\">SNEAKERSS</h1>
+                {#<button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">#}<span class=\"navbar-toggler-icon\"></span></button>
+                <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
+                    <ul class=\"navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4\">
+                        <li class=\"nav-item\"><a class=\"nav-link active\" aria-current=\"page\" href=\"#!\">Home</a></li>
+                        <li class=\"nav-item\"><a class=\"nav-link active\" aria-current=\"page\" href=\"#!\">Article</a></li>
+                        <li class=\"nav-item\"><a class=\"nav-link active\" aria-current=\"page\" href=\"#!\">Product</a></li>
+                        <li class=\"nav-item\"><a class=\"nav-link active\" aria-current=\"page\" href=\"#!\">Sign In</a></li>
+
+                    </ul>
+                    <form class=\"d-flex\">
+                            <button class=\"btn btn-outline-dark\" type=\"submit\">
+                                <i class=\"bi-cart-fill me-1\"></i>
+                                Cart
+                                <span class=\"badge bg-dark text-white ms-1 rounded-pill\">0</span>
+                            </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+        {% block body %}{% endblock %}
+    </body>
+</html>
+{#<nav>
             <a href=\"{{ path('app_home') }}\">Home</a>
             <a href=\"{{ path('app_article_index') }}\">Articles</a>
 
@@ -247,11 +256,6 @@ class __TwigTemplate_6a8907f97e0dc99df7ed6b92aec190ee extends Template
             {% if is_granted(\"ROLE_ADMIN\") %}
                 <a href=\"{{ path('app_admin') }}\">Admin</a>
             {% endif %}
-        </nav>
-    </header>
-        {% block body %}{% endblock %}
-    </body>
-</html>
-", "base.html.twig", "/Applications/MAMP/htdocs/Sneakers-Symfony/symfony-ipssi-rendu-AC-YH/templates/base.html.twig");
+        </nav>#}", "base.html.twig", "/Applications/MAMP/htdocs/sneaker-symfony-project/symfony-ipssi-rendu-AC-YH/templates/base.html.twig");
     }
 }
