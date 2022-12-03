@@ -1671,6 +1671,6 @@ class __TwigTemplate_6532a34dfd5dd10c789fc59d22b26981 extends Template
         </tbody>
     </table>
 {% endmacro %}
-", "@Doctrine/Collector/db.html.twig", "/Applications/MAMP/htdocs/sneaker-symfony-project/symfony-ipssi-rendu-AC-YH/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
+", "@Doctrine/Collector/db.html.twig", "/Applications/MAMP/htdocs/Sneakers-Symfony/symfony-ipssi-rendu-AC-YH/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig");
     }
 }
