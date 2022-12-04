@@ -14,7 +14,7 @@
             {% for article in articles %}
                 <section>
                     <h2>{{ article.title }}</h2>
-                    <p>{{ article.description }}</p>
+                    <p>{{ article.content }}</p>
                     {% if article.author %}
                         <p class="article_author">
                             Auteur: {{ article.author.lastname }} {{ article.author.firstname }}
