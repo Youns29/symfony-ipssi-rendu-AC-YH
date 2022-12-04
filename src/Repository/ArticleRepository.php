@@ -51,8 +51,8 @@ class ArticleRepository extends ServiceEntityRepository
                 ->setParameter('author', $author);
 
         }
-/*        $qb->orderBy('a.createdAt', 'DESC')
-            ->setMaxResults($limit);*/
+        $qb->orderBy('a.createdAt', 'DESC')
+            ->setMaxResults($limit);
 
         return $qb->getQuery()->getResult();
 
