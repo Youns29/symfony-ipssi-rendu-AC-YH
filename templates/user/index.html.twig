@@ -9,15 +9,15 @@
     <button class="btn action_button">{{ button_label|default('Save') }}</button>
     {{ form_end(form) }}
     <div class="content_container">
-{#        <div>
+        <div>
             <h2>Mes articles</h2>
             {% for article in articles %}
                 <section>
                     <h2>{{ article.title }}</h2>
-                    <p>{{ article.content }}</p>
+                    <p>{{ article.description }}</p>
                     {% if article.author %}
                         <p class="article_author">
-                            Auteur: {{ article.author.name }} {{ article.author.firstname }}
+                            Auteur: {{ article.author.lastname }} {{ article.author.firstname }}
                         </p>
                     {% endif %}
                     <div class="action_button_container">
@@ -26,8 +26,8 @@
                     </div>
                 </section>
             {% endfor %}
-        </div>#}
-{#        <div>
+        </div>
+        <div>
             <h2>Mes produits</h2>
             {% for product in products %}
                 <section>
@@ -35,27 +35,12 @@
                     <p>{{ product.description }}</p>
                     <p>Price: {{ product.price }} €</p>
                     <p>Category: {{ product.category.name }}</p>
-                    <p>seller : {{ product.seller.name }} {{ product.seller.firstname }}</p>
+                    <p>seller : {{ product.seller.lastname }} {{ product.seller.firstname }}</p>
 
                     <a class="action_button" href="{{ path('app_product_show', {'id': product.id}) }}">show</a>
                     <a class="action_button" href="{{ path('app_product_edit', {'id': product.id}) }}">edit</a>
                 </section>
-            {% endfor %}#}
-{#            <div>
-                <h2>Mes produits</h2>
-                {% for product in products %}
-                    <section>
-                        <h2>{{ product.title }}</h2>
-                        <p>{{ product.description }}</p>
-                        <p>Price: {{ product.price }} €</p>
-                        <p>Category: {{ product.category.name }}</p>
-                        <p>seller : {{ product.seller.name }} {{ product.seller.firstname }}</p>
-
-                        <a class="action_button" href="{{ path('app_product_show', {'id': product.id}) }}">show</a>
-                        <a class="action_button" href="{{ path('app_product_edit', {'id': product.id}) }}">edit</a>
-                    </section>
-                {% endfor %}
-            </div>#}
+            {% endfor %}
         </div>
     </div>
 {% endblock %}

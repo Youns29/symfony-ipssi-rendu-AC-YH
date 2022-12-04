@@ -5384,6 +5384,20 @@
         <argument>null</argument>
       </call>
       <call method="add">
+        <argument type="service" id=".security.request_matcher.4vmEP1H"/>
+        <argument type="collection">
+          <argument>ROLE_USER</argument>
+        </argument>
+        <argument>null</argument>
+      </call>
+      <call method="add">
+        <argument type="service" id=".security.request_matcher.P68q2UW"/>
+        <argument type="collection">
+          <argument>ROLE_USER</argument>
+        </argument>
+        <argument>null</argument>
+      </call>
+      <call method="add">
         <argument type="service" id=".security.request_matcher.Wdr23zN"/>
         <argument type="collection">
           <argument>ROLE_USER</argument>
@@ -5867,6 +5881,12 @@
     </service>
     <service id=".security.request_matcher.3t47Ukh" class="Symfony\Component\HttpFoundation\RequestMatcher">
       <argument>^/product/1</argument>
+    </service>
+    <service id=".security.request_matcher.4vmEP1H" class="Symfony\Component\HttpFoundation\RequestMatcher">
+      <argument>^/product/2</argument>
+    </service>
+    <service id=".security.request_matcher.P68q2UW" class="Symfony\Component\HttpFoundation\RequestMatcher">
+      <argument>^/product/3</argument>
     </service>
     <service id=".security.request_matcher.Wdr23zN" class="Symfony\Component\HttpFoundation\RequestMatcher">
       <argument>^/profile/</argument>
