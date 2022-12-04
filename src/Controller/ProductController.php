@@ -32,8 +32,9 @@ class ProductController extends AbstractController
         $user = $this->getUser();
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $product->setCreatedAt(new DateTimeImmutable('now'));
             $product->setSeller($user);
+            $product->setCreatedAt(new DateTimeImmutable('now'));
+
             $productRepository->save($product, true);
 
             return $this->redirectToRoute('app_product_index', [], Response::HTTP_SEE_OTHER);

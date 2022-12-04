@@ -33,10 +33,10 @@ class Product
     private ?int $quantity = null;
 
     #[ORM\Column(nullable: true)]
-    private ?\DateTimeImmutable $created_at = null;
+    private ?\DateTimeImmutable $createdAt = null;
 
     #[ORM\Column(nullable: true)]
-    private ?\DateTimeImmutable $update_at = null;
+    private ?\DateTimeImmutable $updateAt = null;
 
     public function getId(): ?int
     {
@@ -129,7 +129,7 @@ class Product
 
     public function getUpdatedAt(): ?\DateTimeImmutable
     {
-        return $this->updatedAt;
+        return $this->UpdatedAt;
     }
 
     public function setUpdatedAt(?\DateTimeImmutable $updatedAt): self

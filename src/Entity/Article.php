@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Repository\ArticleRepository;
+use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: ArticleRepository::class)]
@@ -13,20 +14,23 @@ class Article
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(length: 100)]
+    #[ORM\Column(length: 255, nullable: true)]
     private ?string $title = null;
 
-    #[ORM\Column(length: 255)]
-    private ?string $description = null;
+    #[ORM\Column(type: Types::TEXT, nullable: true)]
+    private ?string $content = null;
 
     #[ORM\ManyToOne(inversedBy: 'articles')]
     private ?User $author = null;
 
     #[ORM\Column(nullable: true)]
-    private ?\DateTimeImmutable $created_at = null;
+    private ?\DateTimeImmutable $createdAt = null;
 
     #[ORM\Column(nullable: true)]
-    private ?\DateTimeImmutable $update_at = null;
+    private ?\DateTimeImmutable $updatedAt = null;
+
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $image = null;
 
     public function getId(): ?int
     {
@@ -38,21 +42,21 @@ class Article
         return $this->title;
     }
 
-    public function setTitle(string $title): self
+    public function setTitle(?string $title): self
     {
         $this->title = $title;
 
         return $this;
     }
 
-    public function getDescription(): ?string
+    public function getContent(): ?string
     {
-        return $this->description;
+        return $this->content;
     }
 
-    public function setDescription(string $description): self
+    public function setContent(?string $content): self
     {
-        $this->description = $description;
+        $this->content = $content;
 
         return $this;
     }
@@ -71,25 +75,26 @@ class Article
 
     public function getCreatedAt(): ?\DateTimeImmutable
     {
-        return $this->created_at;
+        return $this->createdAt;
     }
 
-    public function setCreatedAt(?\DateTimeImmutable $created_at): self
+    public function setCreatedAt(?\DateTimeImmutable $createdAt): self
     {
-        $this->created_at = $created_at;
+        $this->createdAt = $createdAt;
 
         return $this;
     }
 
-    public function getUpdateAt(): ?\DateTimeImmutable
+    public function getUpdatedAt(): ?\DateTimeImmutable
     {
-        return $this->update_at;
+        return $this->updatedAt;
     }
 
-    public function setUpdateAt(?\DateTimeImmutable $update_at): self
+    public function setUpdatedAt(?\DateTimeImmutable $updatedAt): self
     {
-        $this->update_at = $update_at;
+        $this->updatedAt = $updatedAt;
 
         return $this;
     }
+
 }

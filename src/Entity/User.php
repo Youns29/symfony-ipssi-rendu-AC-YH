@@ -46,6 +46,7 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\OneToMany(mappedBy: 'seller', targetEntity: Product::class)]
     private Collection $products;
 
+
     public function __construct()
     {
         $this->articles = new ArrayCollection();

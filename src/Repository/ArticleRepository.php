@@ -49,7 +49,6 @@ class ArticleRepository extends ServiceEntityRepository
         if($author) {
             $qb->andWhere('a.author = :author')
                 ->setParameter('author', $author);
-
         }
         $qb->orderBy('a.createdAt', 'DESC')
             ->setMaxResults($limit);
