@@ -130,12 +130,18 @@ return [[
 '[C]App%5CEntity%5CArticle%23getDescription' => 1,
 'App%5CEntity%5CArticle%23setDescription' => 0,
 '[C]App%5CEntity%5CArticle%23setDescription' => 1,
+'App%5CEntity%5CArticle%23getAuthor' => 0,
+'[C]App%5CEntity%5CArticle%23getAuthor' => 1,
+'App%5CEntity%5CArticle%23setAuthor' => 0,
+'[C]App%5CEntity%5CArticle%23setAuthor' => 1,
 'App%5CEntity%5CArticle%24id' => 0,
 '[C]App%5CEntity%5CArticle%24id' => 1,
 'App%5CEntity%5CArticle%24title' => 0,
 '[C]App%5CEntity%5CArticle%24title' => 1,
 'App%5CEntity%5CArticle%24description' => 0,
 '[C]App%5CEntity%5CArticle%24description' => 1,
+'App%5CEntity%5CArticle%24author' => 0,
+'[C]App%5CEntity%5CArticle%24author' => 1,
 'App%5CEntity%5CCart' => 0,
 '[C]App%5CEntity%5CCart' => 1,
 'App%5CEntity%5CCart%23getId' => 0,
@@ -826,6 +832,6 @@ return [[
 ], [
 
 0 => [],
-1 => 1670092401,
+1 => 1670169763,
 
 ]];

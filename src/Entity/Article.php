@@ -19,6 +19,8 @@ class Article
     #[ORM\Column(length: 255)]
     private ?string $description = null;
 
+    #[ORM\ManyToOne(inversedBy: 'articles')]
+    private ?User $author = null;
 
     public function getId(): ?int
     {
@@ -49,5 +51,15 @@ class Article
         return $this;
     }
 
+    public function getAuthor(): ?User
+    {
+        return $this->author;
+    }
 
+    public function setAuthor(?User $author): self
+    {
+        $this->author = $author;
+
+        return $this;
+    }
 }

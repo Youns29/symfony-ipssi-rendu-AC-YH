@@ -39,9 +39,28 @@ class ProductRepository extends ServiceEntityRepository
         }
     }
 
+    public function findByCreatedDate(int $limit, int $seller = null, int $category = null): array
+    {
+        $qb = $this->createQueryBuilder('p');
+
+        if ($seller) {
+            $qb->andWhere('p.seller = :seller')
+                ->setParameter('seller', $seller);
+        }
+        if ($category) {
+            $qb->andWhere('p.category = :category')
+                ->setParameter('category', $category);
+        }
+        $qb->orderBy('p.createdAt', 'DESC')
+            ->setMaxResults($limit);
+
+        return $qb->getQuery()->getResult();
+    }
+
 //    /**
 //     * @return Product[] Returns an array of Product objects
 //     */
+
 //    public function findByExampleField($value): array
 //    {
 //        return $this->createQueryBuilder('p')

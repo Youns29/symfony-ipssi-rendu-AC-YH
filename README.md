@@ -73,7 +73,7 @@ Le projet est mini site e-commerce composé de :
 - Article
 - Product (ajouter UN SEUL paramètre personnalisé tel qu'une couleur, une marque etc.)
 - Category
-- User (Client/Vendeur/Admin)
+- User (Client/seller/Admin)
 - Cart
 Les articles et produits doivent avoir une option de statut, publié ou brouillon. Ils doivent pas etre affiché hors partie admin si ils sont en brouillon. 
 
