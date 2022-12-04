@@ -24,9 +24,8 @@ class UserType extends AbstractType
             ])
             ->add('lastname')
             ->add('firstname')
-            ->add('profilepicture')
-            ->add('seller')
-            ->add('author')
+/*            ->add('seller')
+            ->add('author')*/
         ;
     }
 
