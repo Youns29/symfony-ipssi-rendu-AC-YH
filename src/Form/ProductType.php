@@ -30,6 +30,9 @@ class ProductType extends AbstractType
                 'choice_label' => 'name',
                 'choice_value' => 'id'
             ])
+            ->add('quantity', TextType::class, [
+                'label' => "Quantité"
+            ])
  /*           ->add('image', TextType::class, [
                 'label' => "Image"
             ])*/;
