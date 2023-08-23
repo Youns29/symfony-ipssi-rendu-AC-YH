@@ -11,7 +11,9 @@
             <p>Prix: {{ product.price }} €</p>
             <p>Stock: {{ product.quantity }}</p>
             <p>Catégorie: {{ product.category.name }}</p>
+{#
             <p>Vendeur : {{ product.seller.firstname }}</p>
+#}
 
             <a href="{{ path('app_product_show', {'id': product.id}) }}">show</a>
             <a href="{{ path('app_product_edit', {'id': product.id}) }}">edit</a>
